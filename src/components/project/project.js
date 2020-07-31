@@ -164,6 +164,9 @@ margin-right: 0.5rem;
 color: ${colors.white};
 text-align: center;
 cursor: pointer;
+&:hover{
+background-color: ${colors.pink};
+}
 `
 const BtnButtonType = styled.button`
 width: fit-content;
@@ -176,6 +179,9 @@ margin-right: 0.5rem;
 color: ${colors.white};
 text-align: center;
 cursor: pointer;
+&:hover{
+background-color: ${colors.pink};
+}
 `;
 
 const UseList = styled.ul`
@@ -193,6 +199,7 @@ margin-bottom: 0;
 
 function Project(props) {
     const [visible, setCount] = useState(false); //project detailの表示用Hook
+    const gist = props.gist;
 
     return (
         <>
@@ -240,7 +247,7 @@ function Project(props) {
                 </RightWrapper>
 
             </ProjectContainer>
-            <ProjectDetail visible={visible}/>
+            <ProjectDetail visible={visible} gist={gist}/>
         </>
     )
 }

@@ -9,6 +9,7 @@ import {
     restoranteAmelie as amelie
 } from "../components/project/projectSource";
 
+
 const SectionBase = styled.section`
 max-width: 100vm;
 height: auto;
@@ -52,7 +53,9 @@ function ProjectsPage() {
                          code={todo.code}
                          icons={todo.icons}
                          text={todo.text}
-                         use={todo.use}/>
+                         use={todo.use}
+                         gist={todo.gist}
+                />
 
 
                 <Project title={job.title}
@@ -62,7 +65,8 @@ function ProjectsPage() {
                          code={job.code}
                          icons={job.icons}
                          text={job.text}
-                         use={job.use}/>
+                         use={job.use}
+                         gist={job.gist}/>
 
                 <Project title={hana.title}
                          type={hana.type}
@@ -71,7 +75,8 @@ function ProjectsPage() {
                          code={hana.code}
                          icons={hana.icons}
                          text={hana.text}
-                         use={hana.use}/>
+                         use={hana.use}
+                         gist={hana.gist}/>
 
                 <Project title={amelie.title}
                          type={amelie.type}
@@ -80,7 +85,8 @@ function ProjectsPage() {
                          code={amelie.code}
                          icons={amelie.icons}
                          text={amelie.text}
-                         use={amelie.use}/>
+                         use={amelie.use}
+                         gist={amelie.gist}/>
 
             </LeftWrapper>
         </SectionBase>
